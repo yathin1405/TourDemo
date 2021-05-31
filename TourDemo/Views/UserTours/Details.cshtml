@@ -1,0 +1,114 @@
+﻿@model TourDemo.Models.UserTour
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UserTour</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tour_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tour_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tour_Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tour_Duration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TourDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TourDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TourStartTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TourStartTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TourName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TourName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deposit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deposit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Num_Guests)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Num_Guests)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Tour_Num }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
